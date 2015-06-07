@@ -1,0 +1,44 @@
+<div class='row'>
+              <div class='col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2'>
+                <div class='page-header page-header-with-icon'>
+                  <i class='fa fa-envelope'></i>
+                  <h2>Kontaktni obrazec</h2>
+                </div>
+                <form class='form form-validation form-contact' method='post'>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='alert alert-success form-contact-success hidden'>Hvala! Vaše sporočilo je bilo uspešno poslano.</div>
+                      <div class='alert alert-danger form-contact-error hidden'>Ups! Prišlo je do napake.</div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-6'>
+                      <div class='form-group control-group'>
+                        <input class='form-control' data-rule-required='true' name='name' placeholder='Ime' type='text'>
+                        <!-- / this field is required for simple anti spam function, don't remove it! -->
+                        <input class='form-control' name='human' placeholder='Si človek?' style='display: none;' type='text'>
+                      </div>
+                    </div>
+                    <div class='col-sm-6'>
+                      <div class='form-group control-group'>
+                        <input class='form-control' data-rule-email='true' data-rule-required='true' name='email' placeholder='E-Mail' type='email'>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='form-group control-group'>
+                        <textarea class='form-control' data-rule-required='true' name='message' placeholder='Sporočilo...'></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <button class='btn btn-contrast btn-block form-contact-submit' data-loading-text="&lt;i class='fa fa-refresh fa-spin'&gt;&lt;/i&gt; Sending..." type='submit'>
+                        Pošlji sporočilo
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
